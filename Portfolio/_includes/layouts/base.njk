@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Charlie Ward</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gradient bg-gradient-to-br from-gray-800 to-green-950 min-h-full bg-fixed" style="font-family:'Inter'">
+    <div class="cursorEffect"></div>
+    <div class="mx-auto pt-28"></div>
+    {% include 'partials/_header.html' %}
+    {{ content | safe }}
+    {% include 'partials/_footer.html' %}
+    {# <script>
+        const cursor = document.querySelector('.cursorEffect');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX / 2 + 'px';           
+            cursor.style.top = e.pageY / 2 + 'px';
+            gradientCoordx = e.pageX / 2 + 'px';
+            gradientCoordy = e.pageY / 2 + 'px';
+            cursor.style.background = 'radial-gradient(400px at ' + gradientCoordx + ' ' + gradientCoordy + ', #FFFFFF 0%, transparent 80%)';
+        });
+    </script> #}
+</body>
+</html>

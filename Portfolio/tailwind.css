@@ -1,0 +1,22 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    line-height: 1.5;
+}
+
+/* body:hover > .cursorEffect{
+    opacity: 1;
+} */
+::SELECTION {
+    background: whitesmoke;
+    color: #052e16;
+}
+
+.background {
+    height: 100vh;
+}
+.w-120 {
+    width: 512px;
+}
