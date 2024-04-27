@@ -2,64 +2,32 @@
 layout: 'layouts/base.njk'
 ---
 
-<div class="rounded-lg m-10 mt-20 l:w-2/3 md:w-3/4 sm:w-full mx-auto lg:max-w-3xl">
+<div class="rounded-lg m-10 mt-20 l:w-2/3 md:w-3/4 w-full mx-auto lg:max-w-3xl">
     <div class="text-gray-300 px-9">
         <h1 class="text-4xl font-bold text-center">
             About Me
         </h1>
         <br>
         <br>
-        <div class="flex">
-            <div class="h-80 aspect-[5/4] float-left mb-6 mr-6">
-                <div class="flex h-full columns-2 space-x-6">
-                    <div class="justify-start h-80 object-cover">
-                        <img src="/photos/IMG_0972-min.jpeg" class="w-full h-full object-cover rounded-s-3xl">
-                    </div>
-                    <div class="flex flex-col h-full aspect-auto space-y-6">
-                        <div class="aspect-auto h-[148px]">
-                            <img src="/photos/IMG_0279-min.jpeg" class="h-full object-cover object-right rounded-tr-3xl">
-                        </div>
-                        <div class="aspect-auto object-cover h-[148px]">
-                            <img src="/photos/IMG_0501-min.jpeg" class="w-full h-full object-cover rounded-br-3xl">
-                        </div>
-                    </div>
-                </div>
+        <div class="grid grid-cols-9 grid-rows-2 grid-flow-col gap-4 h-80 lg:w-1/2 md:w-2/3 md:float-left justify-center w-full md:pr-6 pb-4">
+            <div class="row-span-2 md:col-span-5 sm:col-span-6 col-span-9 w-full h-full">
+                <img src="/photos/IMG_0972-min.jpeg" class="w-full h-full object-cover rounded-s-3xl">
             </div>
-            <p class="text-lg text-pretty">
-                Charlie Ward is an aspiring developer and a B.S. Business Administration student at Chapman University in Orange, CA. He has programmed video games and websites/web applications, and completed coursework including Financial Accounting, Project Management, and Business Statistics and Analytics.
-                
-                <br>
-                <br>
-        
-                Currently, Charlie is looking for internship opportunities to start his developer career while he completes his time at Chapman. He is also working on multiple personal projects to further his experience, including a 2D platformer and a note-taking application.
-            </p>
+            <div class="h-full md:col-span-4 sm:col-span-3 col-span-0 object-fill">
+                <img src="/photos/IMG_0279-min.jpeg" class="h-full w-full md:object-cover sm:object-fit object-cover object-right rounded-tr-3xl">
+            </div>
+            <div class="h-full md:col-span-4 sm:col-span-3 col-span-0">
+                <img src="/photos/IMG_0501-min.jpeg" class="w-full h-full object-cover rounded-br-3xl">
+            </div>
         </div>
+        <p class="text-balance text-center md:text-left text-lg sm:pt-0 pt-10">
+            Charlie Ward is an aspiring developer and a B.S. Business Administration student at Chapman University in Orange, CA. He has programmed video games and websites/web applications, and completed coursework including Financial Accounting, Project Management, and Business Statistics and Analytics.
+            
+            <br>
+            <br>
+    
+            Currently, Charlie is looking for internship opportunities to start his developer career while he completes his time at Chapman. He is also working on multiple personal projects to further his experience, including a 2D platformer and a note-taking application.
+        </p>
     </div>
     
 </div>
-
-{#      <div class="flex">
-            <div class="h-80 aspect-[5/4] float-left mb-6 mr-6">
-                <div class="flex h-full columns-2 space-x-6">
-                    <div class="justify-start h-80 object-cover">
-                        <img src="/photos/IMG_0972-min.jpeg" class="w-full h-full object-cover rounded-s-3xl">
-                    </div>
-                    <div class="flex flex-col h-full aspect-auto space-y-6">
-                        <div class="aspect-auto h-[148px]">
-                            <img src="/photos/IMG_0279-min.jpeg" class="h-full object-cover object-right rounded-tr-3xl">
-                        </div>
-                        <div class="aspect-auto object-cover h-[148px]">
-                            <img src="/photos/IMG_0501-min.jpeg" class="w-full h-full object-cover rounded-br-3xl">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="text-lg text-pretty">
-                Charlie Ward is an aspiring developer and a B.S. Business Administration student at Chapman University in Orange, CA. He has programmed video games and websites/web applications, and completed coursework including Financial Accounting, Project Management, and Business Statistics and Analytics.
-                
-                <br>
-                <br>
-        
-                Currently, Charlie is looking for internship opportunities to start his developer career while he completes his time at Chapman. He is also working on multiple personal projects to further his experience, including a 2D platformer and a note-taking application.
-            </p>
-        </div> #}
