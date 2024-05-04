@@ -20,3 +20,13 @@ html {
 .w-120 {
     width: 512px;
 }
+
+#overlay.activated {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal.activated {
+    transform: translate(-50%, -50%) scale(1);
+    transition-duration: 200ms;
+}

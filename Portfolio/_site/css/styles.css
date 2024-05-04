@@ -554,12 +554,32 @@ video {
   --tw-contain-style:  ;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .fixed {
   position: fixed;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .left-1\/2 {
   left: 50%;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-1\/2 {
@@ -615,12 +635,12 @@ video {
   height: 20rem;
 }
 
-.h-full {
-  height: 100%;
+.h-\[286px\] {
+  height: 286px;
 }
 
-.h-4\/5 {
-  height: 80%;
+.h-full {
+  height: 100%;
 }
 
 .max-h-\[208px\] {
@@ -643,6 +663,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -650,6 +674,12 @@ video {
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-0 {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -709,6 +739,10 @@ video {
   text-wrap: balance;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -738,13 +772,14 @@ video {
   border-width: 2px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-blue-900 {
@@ -752,18 +787,22 @@ video {
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
 
-.bg-blue-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
-}
-
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 
 .bg-gradient-to-br {
@@ -817,6 +856,11 @@ video {
   padding-right: 2.25rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -862,6 +906,11 @@ video {
   vertical-align: bottom;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -882,11 +931,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -903,6 +947,26 @@ video {
 .text-green-500 {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -924,6 +988,16 @@ html {
 
 .w-120 {
   width: 512px;
+}
+
+#overlay.activated {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal.activated {
+  transform: translate(-50%, -50%) scale(1);
+  transition-duration: 200ms;
 }
 
 .hover\:bg-opacity-50:hover {
@@ -1007,12 +1081,12 @@ html {
     float: left;
   }
 
-  .md\:h-52 {
-    height: 13rem;
-  }
-
   .md\:h-3\/5 {
     height: 60%;
+  }
+
+  .md\:h-52 {
+    height: 13rem;
   }
 
   .md\:max-h-\[176px\] {
@@ -1056,5 +1130,15 @@ html {
 
   .lg\:max-w-3xl {
     max-width: 48rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .xl\:max-w-\[700px\] {
+    max-width: 700px;
   }
 }
